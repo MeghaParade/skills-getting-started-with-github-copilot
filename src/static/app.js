@@ -61,13 +61,20 @@ document.addEventListener("DOMContentLoaded", () => {
       style.textContent = `
         .participants-section {
           margin-top: 1em;
-          padding: 0.5em;
+          padding: 0.5em 0.8em;
           background: #f6f8fa;
           border-radius: 6px;
+          border: 1px solid #e3e6ea;
+        }
+        .participants-section strong {
+          display: block;
+          margin-bottom: 0.3em;
+          color: #1a237e;
         }
         .participants-list {
           margin: 0.5em 0 0 1.2em;
           padding: 0;
+          list-style-type: disc;
         }
         .participant-item {
           margin-bottom: 0.2em;
