@@ -1,4 +1,3 @@
-
 # Endpoint to unregister a participant from an activity
 from fastapi import Query
 
@@ -12,6 +11,8 @@ def unregister_from_activity(activity_name: str, email: str = Query(...)):
         raise HTTPException(status_code=400, detail="Student is not registered for this activity")
     activity["participants"].remove(email)
     return {"message": f"Unregistered {email} from {activity_name}"}
+
+
 """
 High School Management System API
 
